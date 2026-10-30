@@ -1,0 +1,83 @@
+html {
+  scroll-behavior: smooth;
+}
+
+body {
+  font-family: "Plus Jakarta Sans", sans-serif;
+}
+
+section {
+  scroll-margin-top: 80px;
+}
+
+.eyebrow {
+  text-transform: uppercase;
+  letter-spacing: 0.14rem;
+  font-size: 0.75rem;
+  font-weight: 700;
+  color: #1e8e5b;
+  margin-bottom: 0.75rem;
+}
+
+.navbar-brand {
+  letter-spacing: 0.04rem;
+}
+
+.brand-mark {
+  display: inline-flex;
+  align-items: center;
+  justify-content: center;
+  width: 32px;
+  height: 32px;
+  border-radius: 10px;
+  background: linear-gradient(135deg, #2ecc71, #1a9d63);
+  color: #fff;
+  font-weight: 800;
+  margin-right: 0.45rem;
+}
+
+.hero {
+  min-height: 100vh;
+  background: linear-gradient(135deg, rgba(12, 70, 51, 0.92), rgba(46, 204, 113, 0.82)),
+    url("https://images.unsplash.com/photo-1464226184884-fa52ac9c7d3d?auto=format&fit=crop&w=1400&q=80") center/cover no-repeat;
+}
+
+.hero-kicker {
+  font-size: 0.77rem;
+  letter-spacing: 0.18rem;
+}
+
+.hero-card {
+  background: rgba(255, 255, 255, 0.12);
+  border: 1px solid rgba(255, 255, 255, 0.22);
+  backdrop-filter: blur(8px);
+}
+
+.card {
+  transition: transform 0.25s ease, box-shadow 0.25s ease;
+}
+
+.card:hover {
+  transform: translateY(-6px);
+  box-shadow: 0 0.75rem 1.5rem rgba(18, 20, 23, 0.12) !important;
+}
+
+.carousel-item img {
+  height: 520px;
+  object-fit: cover;
+}
+
+.accordion-button:not(.collapsed) {
+  background-color: rgba(30, 142, 91, 0.08);
+  color: #14523a;
+}
+
+@media (max-width: 767.98px) {
+  .carousel-item img {
+    height: 350px;
+  }
+
+  .hero {
+    min-height: 90vh;
+  }
+}
